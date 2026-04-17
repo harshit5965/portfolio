@@ -57,13 +57,13 @@
     min-height: 100vh;
     display: grid; grid-template-columns: 1fr 300px;
     align-items: center;
-    padding: 130px 48px 80px;
+    padding: 72px 48px 72px;
     border-bottom: 1px solid var(--border);
   }
-  .hero-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--dim); margin-bottom: 20px; }
+  .hero-eyebrow { font-size: 15px; font-weight: 400; letter-spacing: 0.04em; text-transform: none; color: var(--muted); margin-bottom: 12px; }
   .hero-name { font-family: var(--font-serif); font-size: clamp(36px, 5vw, 64px); font-weight: 400; line-height: 1; letter-spacing: -0.01em; color: var(--text); margin-bottom: 6px; white-space: nowrap; }
   .hero-name em { font-style: italic; color: var(--text); }
-  .hero-subtitle { font-family: var(--font-serif); font-size: clamp(17px, 2vw, 22px); font-weight: 400; font-style: italic; color: var(--muted); margin-bottom: 32px; }
+  .hero-subtitle { font-family: var(--font-serif); font-size: clamp(13px, 1.5vw, 16px); font-weight: 400; font-style: italic; color: var(--dim); margin-bottom: 32px; }
   .hero-desc { max-width: 500px; font-size: 15px; color: var(--muted); line-height: 1.8; font-weight: 300; margin-bottom: 36px; }
   .hero-actions { display: flex; gap: 16px; align-items: center; }
   .btn-primary { font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--surface); background: var(--accent); padding: 12px 24px; border-radius: 2px; text-decoration: none; transition: opacity 0.2s; }
@@ -77,14 +77,14 @@
 
   /* METRICS BAND */
   .metrics-band { display: grid; grid-template-columns: repeat(6, 1fr); border-bottom: 1px solid var(--border); }
-  .metric-item { padding: 36px 24px; border-right: 1px solid var(--border); text-align: center; }
+  .metric-item { padding: 28px 24px; border-right: 1px solid var(--border); text-align: center; }
   .metric-item:last-child { border-right: none; }
   .metric-val { font-family: var(--font-serif); font-size: 30px; font-weight: 400; color: var(--text); line-height: 1; }
   .metric-label { font-size: 11px; color: var(--dim); margin-top: 7px; line-height: 1.5; }
 
   /* SECTIONS */
-  section { padding: 96px 48px; }
-  .section-header { margin-bottom: 52px; display: flex; align-items: baseline; gap: 20px; }
+  section { padding: 72px 48px; }
+  .section-header { margin-bottom: 40px; display: flex; align-items: baseline; gap: 20px; }
   .section-num { display: none; }
   .section-title { font-family: var(--font-serif); font-size: clamp(28px, 3.5vw, 42px); font-weight: 400; letter-spacing: -0.01em; line-height: 1.1; color: var(--text); }
   .section-title em { font-style: italic; color: var(--text); }
@@ -124,7 +124,7 @@
   .skill-fill { height: 1px; background: var(--text); }
 
   /* TIMELINE */
-  .tl-item { display: grid; grid-template-columns: 180px 1fr; gap: 32px; padding: 40px 0; border-top: 1px solid var(--border); }
+  .tl-item { display: grid; grid-template-columns: 180px 1fr; gap: 32px; padding: 32px 0; border-top: 1px solid var(--border); }
   .tl-item:last-child { border-bottom: 1px solid var(--border); }
   .tl-period { font-size: 11px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--dim); margin-bottom: 8px; }
   .tl-badge { display: inline-block; font-size: 10px; font-weight: 500; letter-spacing: 0.07em; text-transform: uppercase; padding: 2px 8px; border-radius: 2px; background: var(--tag-bg); color: var(--tag-text); }
@@ -137,7 +137,7 @@
 
   /* AWARDS */
   .awards-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); }
-  .award-card { background: var(--bg); padding: 36px 28px; }
+  .award-card { background: var(--bg); padding: 28px 24px; }
   .award-icon { font-size: 14px; color: var(--dim); margin-bottom: 16px; letter-spacing: 0.08em; font-family: var(--font-sans); font-weight: 500; text-transform: uppercase; }
   .award-name { font-family: var(--font-serif); font-size: 18px; font-weight: 400; color: var(--text); margin-bottom: 10px; }
   .award-desc { font-size: 13px; color: var(--muted); line-height: 1.65; font-weight: 300; }
@@ -183,8 +183,8 @@
 <!-- HERO -->
 <div class="hero">
   <div class="hero-left">
-    <div class="hero-eyebrow">Assistant Technical Product Manager · Data &amp; Marketing Infrastructure</div>
     <h1 class="hero-name">Harshit <em>Agarwal</em></h1>
+    <div class="hero-eyebrow">Assistant Technical Product Manager<br>Data &amp; Marketing Infrastructure</div>
     <p class="hero-subtitle">Shipping data-driven products at scale</p>
     <p class="hero-desc">6+ years of experience owning end-to-end product lifecycles — from discovery and roadmapping to cross-functional execution — with a 98% on-time delivery record. Currently at Genpact, working with PayPal.</p>
     <div class="hero-actions">
